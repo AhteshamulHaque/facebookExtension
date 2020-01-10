@@ -1,0 +1,178 @@
+2020-01-09 10:38:50,516: OSError: write error
+2020-01-09 13:10:10,140: OSError: write error
+2020-01-09 13:10:12,112: OSError: write error
+2020-01-09 16:11:54,106: OSError: write error
+2020-01-09 16:11:55,787: OSError: write error
+2020-01-09 17:46:55,117: OSError: write error
+2020-01-09 18:54:50,226: OSError: write error
+2020-01-09 19:24:40,855: OSError: write error
+2020-01-10 01:01:14,551: OSError: write error
+2020-01-10 02:51:02,100: OSError: write error
+2020-01-10 02:51:03,518: OSError: write error
+2020-01-10 06:59:42,966: OSError: write error
+2020-01-10 07:21:49,810: OSError: write error
+2020-01-10 07:21:51,766: OSError: write error
+2020-01-10 07:21:54,640: OSError: write error
+2020-01-10 07:29:54,429: Exception on /rank [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.7/site-packages/flask_restful/__init__.py", line 273, in error_router
+    return original_handler(e)
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nilekrator/resultportal/extensions.py", line 12, in decorated_function
+    return f(*args, **kwargs)
+  File "/home/nilekrator/resultportal/student/student.py", line 219, in rank
+    Stu.get_raw_rank()
+  File "/home/nilekrator/resultportal/student/studentrank.py", line 39, in get_raw_rank
+    method=self.method,
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'nilekrator$_2019.UG_MM_5' doesn't exist")
+2020-01-10 07:30:14,547: Exception on /rank [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.7/site-packages/flask_restful/__init__.py", line 273, in error_router
+    return original_handler(e)
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nilekrator/resultportal/extensions.py", line 12, in decorated_function
+    return f(*args, **kwargs)
+  File "/home/nilekrator/resultportal/student/student.py", line 219, in rank
+    Stu.get_raw_rank()
+  File "/home/nilekrator/resultportal/student/studentrank.py", line 39, in get_raw_rank
+    method=self.method,
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'nilekrator$_2019.UG_MM_5' doesn't exist")
+2020-01-10 07:54:11,301: OSError: write error
+2020-01-10 08:00:00,907: OSError: write error
+2020-01-10 10:01:43,557: OSError: write error
+2020-01-10 10:07:26,958: OSError: write error
+2020-01-10 10:15:35,307: OSError: write error
+2020-01-10 11:33:27,270: OSError: write error
+2020-01-10 15:18:54,313: OSError: write error
+2020-01-10 15:24:45,901: Exception on /rank [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.7/site-packages/flask_restful/__init__.py", line 273, in error_router
+    return original_handler(e)
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nilekrator/resultportal/extensions.py", line 12, in decorated_function
+    return f(*args, **kwargs)
+  File "/home/nilekrator/resultportal/student/student.py", line 219, in rank
+    Stu.get_raw_rank()
+  File "/home/nilekrator/resultportal/student/studentrank.py", line 39, in get_raw_rank
+    method=self.method,
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'nilekrator$_2016.UG_MM_2' doesn't exist")
+2020-01-10 15:24:55,873: Exception on /rank [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.7/site-packages/flask_restful/__init__.py", line 273, in error_router
+    return original_handler(e)
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nilekrator/resultportal/extensions.py", line 12, in decorated_function
+    return f(*args, **kwargs)
+  File "/home/nilekrator/resultportal/student/student.py", line 219, in rank
+    Stu.get_raw_rank()
+  File "/home/nilekrator/resultportal/student/studentrank.py", line 39, in get_raw_rank
+    method=self.method,
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/nilekrator/.local/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'nilekrator$_2016.UG_MM_2' doesn't exist")

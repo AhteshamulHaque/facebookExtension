@@ -1,0 +1,10 @@
+2020-01-10 10:01:43 Fri Jan 10 10:01:43 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /college/ (ip 10.0.0.249) !!!
+2020-01-10 10:01:43 Fri Jan 10 10:01:43 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /college/ (10.0.0.249)
+2020-01-10 10:07:26 Fri Jan 10 10:07:26 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /college/ (ip 10.0.0.249) !!!
+2020-01-10 10:07:26 Fri Jan 10 10:07:26 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /college/ (10.0.0.249)
+2020-01-10 10:15:35 Fri Jan 10 10:15:35 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /college/ (ip 10.0.0.249) !!!
+2020-01-10 10:15:35 Fri Jan 10 10:15:35 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /college/ (10.0.0.249)
+2020-01-10 11:33:27 Fri Jan 10 11:33:27 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /college/ (ip 10.0.0.249) !!!
+2020-01-10 11:33:27 Fri Jan 10 11:33:27 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /college/ (10.0.0.249)
+2020-01-10 15:18:54 Fri Jan 10 15:18:54 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /static/images/8731.jpg (ip 10.0.0.249) !!!
+2020-01-10 15:18:54 Fri Jan 10 15:18:54 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /static/images/8731.jpg (10.0.0.249)
